@@ -1,0 +1,21 @@
+
+h1{
+  background:blue;
+  color:yellow;
+  margin:20px;
+  border:1px;
+  border-radius:30px;
+  text-align:center
+}
+h3{
+  border:1px;
+  background:lightgrey;
+  margin:30px
+}
+.navbar-item{
+  background:orange;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+
