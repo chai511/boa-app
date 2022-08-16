@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/boa-app-gh-pages/static/css/main.226c9ba4.chunk.css",
-    "main.js": "/boa-app-gh-pages/static/js/main.3639b19d.chunk.js",
-    "main.js.map": "/boa-app-gh-pages/static/js/main.3639b19d.chunk.js.map",
-    "runtime-main.js": "/boa-app-gh-pages/static/js/runtime-main.4c1dbc48.js",
-    "runtime-main.js.map": "/boa-app-gh-pages/static/js/runtime-main.4c1dbc48.js.map",
-    "static/js/2.ad7c57d2.chunk.js": "/boa-app-gh-pages/static/js/2.ad7c57d2.chunk.js",
-    "static/js/2.ad7c57d2.chunk.js.map": "/boa-app-gh-pages/static/js/2.ad7c57d2.chunk.js.map",
-    "index.html": "/boa-app-gh-pages/index.html",
-    "precache-manifest.02d6f3fa90d77a0dc03d325fd576915e.js": "/boa-app-gh-pages/precache-manifest.02d6f3fa90d77a0dc03d325fd576915e.js",
-    "service-worker.js": "/boa-app-gh-pages/service-worker.js",
-    "static/css/main.226c9ba4.chunk.css.map": "/boa-app-gh-pages/static/css/main.226c9ba4.chunk.css.map",
-    "static/js/2.ad7c57d2.chunk.js.LICENSE.txt": "/boa-app-gh-pages/static/js/2.ad7c57d2.chunk.js.LICENSE.txt",
-    "static/js/main.3639b19d.chunk.js.LICENSE.txt": "/boa-app-gh-pages/static/js/main.3639b19d.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/boa-app-gh-pages/static/media/logo.5d5d9eef.svg"
+    "main.css": "/boa-app/static/css/main.226c9ba4.chunk.css",
+    "main.js": "/boa-app/static/js/main.186f8ca3.chunk.js",
+    "main.js.map": "/boa-app/static/js/main.186f8ca3.chunk.js.map",
+    "runtime-main.js": "/boa-app/static/js/runtime-main.485ec7c5.js",
+    "runtime-main.js.map": "/boa-app/static/js/runtime-main.485ec7c5.js.map",
+    "static/js/2.ad7c57d2.chunk.js": "/boa-app/static/js/2.ad7c57d2.chunk.js",
+    "static/js/2.ad7c57d2.chunk.js.map": "/boa-app/static/js/2.ad7c57d2.chunk.js.map",
+    "index.html": "/boa-app/index.html",
+    "precache-manifest.2516d4adf479d7ecc880da0c528523fc.js": "/boa-app/precache-manifest.2516d4adf479d7ecc880da0c528523fc.js",
+    "service-worker.js": "/boa-app/service-worker.js",
+    "static/css/main.226c9ba4.chunk.css.map": "/boa-app/static/css/main.226c9ba4.chunk.css.map",
+    "static/js/2.ad7c57d2.chunk.js.LICENSE.txt": "/boa-app/static/js/2.ad7c57d2.chunk.js.LICENSE.txt",
+    "static/js/main.186f8ca3.chunk.js.LICENSE.txt": "/boa-app/static/js/main.186f8ca3.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/boa-app/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4c1dbc48.js",
+    "static/js/runtime-main.485ec7c5.js",
     "static/js/2.ad7c57d2.chunk.js",
     "static/css/main.226c9ba4.chunk.css",
-    "static/js/main.3639b19d.chunk.js"
+    "static/js/main.186f8ca3.chunk.js"
   ]
 }
