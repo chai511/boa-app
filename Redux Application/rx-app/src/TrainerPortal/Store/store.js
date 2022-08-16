@@ -1,4 +1,4 @@
-export default  [
+export default [
     {
         id: 1,
         first: "Murthy",
@@ -24,14 +24,3 @@ export default  [
         thumbnail: "http://imgur.com/Obf5SniV.jpg"
     }
 ]
-
-
-
-
-
-
-
-
-
-
-

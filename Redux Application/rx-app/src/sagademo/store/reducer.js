@@ -4,9 +4,8 @@ const initialState = {
   
   const sagareducer = (state = initialState, action) => {
     const newState = { ...state };
-  
     switch (action.type) {
-      case "AGE_UP_ASYNC":
+        case "AGE_UP":
         newState.age += action.value;
         break;
   
@@ -14,6 +13,7 @@ const initialState = {
         newState.age -= action.value;
         break;
     }
+
     return newState;
   };
   

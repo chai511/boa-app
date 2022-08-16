@@ -14,11 +14,11 @@ function* ageUpAsync() {
   yield delay(4000);
   //yield logresult("url")
   //yield put({type:"LOG_DATA",value:'ageUP invoked'})  
-  yield put({ type: "AGE_UP_ASYNC", value: 1 });
+  yield put({ type: "AGE_UP", value: 1 });
 }
 
 export function* watchAgeUp() {
-  yield takeLatest("AGE_UP", ageUpAsync);
+  yield takeLatest("AGE_UP_ASYNC", ageUpAsync);
 }
 
 

@@ -6,8 +6,8 @@ import TrainerDetails from '../Containers/trainer-details'
 
 const App = () => (
     <div>
-          <h1>React Redux Demo by Murthy</h1>
-            <TrainerList/>
+            <h1>React Redux Demo by Murthy</h1>
+            <TrainerList />
             <hr />
             <h2>Trainer Details</h2>
             <TrainerDetails/>

@@ -8,7 +8,7 @@ class TrainerDetails extends Component {
         }
         return (
         <div>
-            <img src={this.props.trainer.thumbnail} />
+            <img src={this.props.trainer.thumbnail} alt='Trainer Image' />
             <h2>{this.props.trainer.first} 
                 {this.props.trainer.last}
             </h2>

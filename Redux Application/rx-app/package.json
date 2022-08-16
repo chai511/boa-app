@@ -17,7 +17,7 @@
     "react-scripts": "3.4.1",
     "react-test-renderer": "^16.13.1",
     "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8",
+    "redux-devtools-extension": "^2.13.9",
     "redux-form": "^8.3.8",
     "redux-forms": "^1.0.0-3",
     "redux-logger": "^3.0.6",

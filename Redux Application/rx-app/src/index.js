@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { configureStore } from '@reduxjs/toolkit';
@@ -20,7 +20,7 @@ ReactDOM.render(
     <App />
   </Provider>,
   document.getElementById('root')
-); 
+); */
 
 
 
@@ -33,19 +33,20 @@ import sagareducer from "./sagademo/store/reducer";
 
 //npm install redux-saga --save
 
-import { Provider } from "react-redux";
-import { configureStore, applyMiddleware } from "@reduxjs/toolkit";
-
+import { Provider} from "react-redux";
+import {applyMiddleware, configureStore } from '@reduxjs/toolkit';
+import { composeWithDevTools } from 
+           "redux-devtools-extension"; 
 import createSagaMiddleware from "redux-saga";
 
 import { watchAgeUp } from "./sagademo/sagas/saga";
 
 const sagaMiddleware = createSagaMiddleware();
 const store = configureStore(
-  {reducer:{sagareducer}, middleware:[applyMiddleware(sagaMiddleware)]}
+  {reducer:sagareducer, middleware:[sagaMiddleware]}
 );
 
-sagaMiddleware.run(watchAgeUp);
+sagaMiddleware.run(watchAgeUp)
 
 ReactDOM.render(
   <Provider store={store}>
@@ -53,7 +54,8 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );*/
-	
+
+
 
 /*
 import React from 'react';
@@ -105,8 +107,8 @@ ReactDOM.render(
     document.getElementById('root')
 )
 */
-
-/*  import {createStore, applyMiddleware} from 'redux'
+/*
+  import {createStore, applyMiddleware} from 'redux'
   import logger from 'redux-logger';
   // reducers are basically functions to update the store
   // Create reducers to update store
@@ -117,6 +119,9 @@ ReactDOM.render(
       if(action.type==='DEC'){
           return state-action.payload;
       }
+      if(action.type==='MUL'){
+        return state*action.payload;
+    }
       return state;
   }
 
@@ -130,8 +135,8 @@ ReactDOM.render(
   store.dispatch({type:"INC",payload:1});
   store.dispatch({type:"INC",payload:3});
   store.dispatch({type:"DEC",payload:20});
-  store.dispatch({type:'Multipy',payload:5})
-  */
+  store.dispatch({type:'MUL',payload:5})*/
+  
 
 /*import {combineReducers,applyMiddleware,createStore}   from 'redux';
 import logger from "redux-logger";
@@ -178,16 +183,19 @@ store.dispatch({type:'CHANGE_NAME',payload:"Murthy"});
 store.dispatch({type:'CHANGE_AGE',payload:35});
 store.dispatch({type:'CHANGE_NAME',payload:"Raju"});
 store.dispatch({type:'CHANGE_ADDRESS',payload:'Hyderabad'}); 
-
-
 */
+
 /*
-import {applyMiddleware,createStore} from 'redux';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
+import {applyMiddleware, configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk'; // npm install redux-thunk --save
 import { composeWithDevTools } from "redux-devtools-extension";
 //npm install  axios --save
 import axios from 'axios';
+import App from './TrainerPortal/Components/App'
 
 // state tree +Component= DOM tree
 const initialState={
@@ -216,8 +224,8 @@ const reducer=(state=initialState,action)=>{
     return state;
 }
 
-const store=createStore(reducer,
-    composeWithDevTools (applyMiddleware(thunk,logger)));
+const store=configureStore({reducer:reducer},
+    composeWithDevTools(applyMiddleware(thunk,logger)));
 
 store.subscribe(()=>console.log(store.getState()))
 
@@ -227,7 +235,7 @@ store.subscribe(()=>console.log(store.getState()))
 //thunk middleware expects only one dipatch
 store.dispatch((dispatch)=>{
     //multiple actions occur with single action     
-    dispatch({type:"c"})
+    dispatch({type:"FETCH_USERS_START"})
 
     axios.get("https://jsonplaceholder.typicode.com/users")
     .then ( (response) =>{
@@ -237,4 +245,39 @@ store.dispatch((dispatch)=>{
       dispatch({type:"FETCH_USERS_ERROR",payload:error})
     })
 })// end of code
+
+//connect store with provider  with app
+ReactDOM.render(
+  <Provider store={store}>
+      <App />
+  </Provider>,    
+  document.getElementById('root')
+)
+
 */
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {FETCHING_GITHUB_DATA,FETCHED_GITHUB_DATA } from '../src/GitHubData/actions/types';
+import logger from 'redux-logger';
+import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+import App from './GitHubData/components/App';
+import githubReducer from '../src/GitHubData/reducers/gitHubReducer';
+import { fetchGithubData } from '../src/GitHubData/reducers/fetchGitHubData';
+const store = configureStore({reducer:githubReducer, middleware:[thunk,logger]});
+export const initialState={isLoading:true, data:[]}
+
+store.dispatch({type:"FETCHING_GITHUB_DATA",payload:{initialState}})
+store.dispatch(fetchGithubData())
+store.dispatch({type:"FETCHED_GITHUB_DATA"})
+
+store.subscribe(()=>console.log(store.getState()));
+
+console.log(store.data)
+
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>, document.getElementById('root'));
