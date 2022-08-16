@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/boa-app/static/css/main.226c9ba4.chunk.css",
-    "main.js": "/boa-app/static/js/main.186f8ca3.chunk.js",
-    "main.js.map": "/boa-app/static/js/main.186f8ca3.chunk.js.map",
+    "main.js": "/boa-app/static/js/main.1fb6f276.chunk.js",
+    "main.js.map": "/boa-app/static/js/main.1fb6f276.chunk.js.map",
     "runtime-main.js": "/boa-app/static/js/runtime-main.485ec7c5.js",
     "runtime-main.js.map": "/boa-app/static/js/runtime-main.485ec7c5.js.map",
     "static/js/2.ad7c57d2.chunk.js": "/boa-app/static/js/2.ad7c57d2.chunk.js",
     "static/js/2.ad7c57d2.chunk.js.map": "/boa-app/static/js/2.ad7c57d2.chunk.js.map",
     "index.html": "/boa-app/index.html",
-    "precache-manifest.2516d4adf479d7ecc880da0c528523fc.js": "/boa-app/precache-manifest.2516d4adf479d7ecc880da0c528523fc.js",
+    "precache-manifest.120d8dba7934121338d62fba3415486a.js": "/boa-app/precache-manifest.120d8dba7934121338d62fba3415486a.js",
     "service-worker.js": "/boa-app/service-worker.js",
     "static/css/main.226c9ba4.chunk.css.map": "/boa-app/static/css/main.226c9ba4.chunk.css.map",
     "static/js/2.ad7c57d2.chunk.js.LICENSE.txt": "/boa-app/static/js/2.ad7c57d2.chunk.js.LICENSE.txt",
-    "static/js/main.186f8ca3.chunk.js.LICENSE.txt": "/boa-app/static/js/main.186f8ca3.chunk.js.LICENSE.txt",
+    "static/js/main.1fb6f276.chunk.js.LICENSE.txt": "/boa-app/static/js/main.1fb6f276.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/boa-app/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.485ec7c5.js",
     "static/js/2.ad7c57d2.chunk.js",
     "static/css/main.226c9ba4.chunk.css",
-    "static/js/main.186f8ca3.chunk.js"
+    "static/js/main.1fb6f276.chunk.js"
   ]
 }
