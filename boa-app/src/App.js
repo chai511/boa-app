@@ -8,7 +8,7 @@ import Dashboard from './Dashboard';
 function App() {
   return (
     <div className="App">
-     <Header company="Bank of America" city="Hyderabad"/>
+     <Header company="Global Village" city="Hyderabad"/>
       <Dashboard/>
      <Footer email="All rights reserved by @Chai"/>
     </div>
