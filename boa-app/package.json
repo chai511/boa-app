@@ -1,7 +1,7 @@
 {
   "name": "boa-app",
   "version": "0.1.0",
-  "homepage": "https://chai511.github.io/boa-app-gh-pages",
+  "homepage": "https://chai511.github.io/boa-app",
   "private": true,
   "dependencies": {
     "@types/react": "^18.0.15",
